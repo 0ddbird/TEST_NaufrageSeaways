@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+body {
+    background-image: url("./background.png");
+    background: linear-gradient(rgb(130, 199, 255), 75%, rgb(44, 79, 143))
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Lilita One', cursive;
+    margin-bottom: 1em;
+}
+
+#welcome {
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#formIdable {
+    padding: 2em;
+    margin: 2em;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#skills, #health {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    padding: 1em;
+    margin-bottom: 10px;
+    border: 1px solid white;
+}
+
+#info {
+    margin: 2em 0 2em 0;
+}
+

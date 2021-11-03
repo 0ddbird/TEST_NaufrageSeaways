@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?familyLilita+One&family=Roboto&display=swap" rel="stylesheet">
+    <title>Naufrage Seaways</title>
+</head>
+<body>
+    <h1>Naufrage Seaways</h1>
+
+    <div id="welcome">
+        <span>Bienvenue !</span>
+            <br>
+        <span>Remplissez ce formulaire pour réserver votre aventure de naufragé(e) sur une île déserte.</span>
+        <br>
+        <span>Après soumission de ce formulaire, une estimation de vos chances de survie vous sera communiquée.</span>
+    </div>
+    <div class="container">
+        
+        <form id="formIdable">
+            <fieldset name="info" id="info">
+                <legend>Veuillez renseigner vos informations personnelles.</legend>
+                <label for="nickName">Votre nom, moussaillon !</label><br>
+                <input type="text" id="nickName"><br>
+                <label for="email">Votre adresse email</label><br>
+                <input type="email" id="email"><br>
+            </fieldset>
+
+            <fieldset name="trips" id="trips">
+                <legend>Veuillez indiquer combien de voyages vous avez déjà fait.</legend>
+                <label for="foreign">A l'étranger</label>
+                <input type="number" id="foreign">
+                <label for="mind">Dans votre tête</label>
+                <input type="number" id="mind">
+            </fieldset>
+
+            <fieldset name="stuff" id="stuff">
+                <legend>Choisissez votre équipement parmi les objets suivants.</legend>
+                
+                <input type="radio" id="knife" name="equipment">
+                <label for="knife">Un couteau</label>
+                <br>
+                <input type="radio" id="lighter" name="equipment">
+                <label for="lighter">Un allume-feu</label>
+                <br>
+                <input type="radio" id="smartphone" name="equipment">
+                <label for="smartphone">Un smartphone</label>
+                <br>
+                <input type="radio" id="fork" name="equipment">
+                <label for="fork">Une cuillère</label>
+                <br>
+                <input type="radio" id="panties" name="equipment">
+                <label for="panties">Un slip propre</label>
+                <br>
+                <input type="radio" id="compass" name="equipment">
+                <label for="compass">Une boussole</label>
+                <br>
+                <input type="radio" id="eyePatch" name="equipment">
+                <label for="eyePatch">Un cache-oeil de pirate</label>
+                <br>
+                <input type="radio" id="charger" name="equipment">
+                <label for="charger">Le chargeur du smartphone</label>
+                <br>
+                <input type="radio" id="ball" name="equipment">
+                <label for="ball">Un ballon Wilson</label>
+                <br>
+                <input type="radio" id="nothing" name="equipment">
+                <label for="nothing">Rien du tout !</label>
+                <br>
+            </fieldset>
+
+            <fieldset name="book" id="book">
+                <legend>Choisissez quel(s) livre(s) vous emporterez.</legend>
+                
+                <input type="checkbox" id="vernes">
+                <label for="sleep">L'île mystérieuse - Jules Verne</label>
+                <br>
+                <input type="checkbox" id="defoe">
+                <label for="sleep">Robinson Crusoé - Daniel Defoe</label>
+                <br>
+                <input type="checkbox" id="tournier">
+                <label for="eat">Vendredi ou la vie sauvage - Michel Tournier</label>
+                <br>
+                <input type="checkbox" id="golding">
+                <label for="sleep">Sa Majesté des mouches - William Golding</label>
+                <br>
+                <input type="checkbox" id="voici">
+                <label for="sleep">Le dernier exemplaire en date de Voici</label>
+                <br>
+                <input type="checkbox" id="encyclopedia">
+                <label for="encyclopedia">Une encyclopédie en 12 tomes</label>
+                <br>
+            </fieldset>
+
+            <fieldset name="skills" id="skills">
+                <legend>Veuillez estimer vos compétences de survivant.</legend>
+                <label for="construction">Bricolage</label>
+                <input type="range" min="0" max="4" value="2" step="1" id="diy" name="diy">
+                <label for="hunting">Chasse et pêche</label>
+                <input type="range" min="0" max="4" value="2" step="1" id="hunting" name="hunting">
+                <label for="agriculture">Agriculture</label>
+                <input type="range" min="0" max="4" value="2" step="1" id="agriculture" name="agriculture">
+                <label for="knitting">Tricot</label>
+                <input type="range" min="0" max="2" value="1" step="1" id="knitting" name="knitting">
+                <label for="programming">Programmation</label>
+                <input type="range" min="0" max="100" value="50" step="1" id="programming" name="programming">
+            </fieldset>
+            <fieldset name="health" id="health">
+                <legend>Veuillez estimer vos qualités physiques</legend>
+                <label for="teeth">J'ai des dents</label>
+                <input type="range" min="0" max="50" value="10" step="5" id="teeth" name="teeth">
+                <label for="look">Je suis belle/beau</label>
+                <input type="range" min="0" max="1" value="1" step="1" id="look" name="look">
+                <label for="eyebrows">J'ai deux sourcils</label>
+                <input type="range" min="1" max="1" value="1" step="1" id="eyebrows" name="eyebrows">
+            </fieldset>
+
+            <fieldset name="tribeColor" id="tribeColor">
+                <legend>Veuillez personnaliser la couleur de votre tribu</legend>
+                
+                <label for="color">Couleur préférée</label>
+                <input type="color" id="color" name="color" value="#e66465">
+            
+            </fieldset>
+
+            
+
+            <fieldset name="survivalPet" id="survivalPet">
+                <legend>Veuillez choisir votre animal de compagnie</legend>
+                    <select name="pet" id="pet-select">
+                        <option value="">Choisissez votre fidèle compagnon</option>
+                        
+                        <optgroup label="Animaux communs">
+                            <option value="dog">Un chien</option>
+                            <option value="cat">Un chat</option>
+                            <option value="hamster">Un hamster</option>
+                            <option value="mussel">Une moule</option>
+                        </optgroup>
+
+                        <optgroup label="Animaux exotiques">
+                            <option value="lemur">Un lémurien</option>
+                            <option value="giraffe">Une girafe</option>
+                            <option value="parrot">Un perroquet</option>
+                            <option value="platypus">Un ornithorynque</option>
+                        </optgroup>
+
+                        <optgroup label="Animaux douteux">
+                            <option value="fly">Deux mouches</option>    
+                            <option value="goat">Une chèvre</option>
+                            <option value="spongeBob">Bob l'éponge</option>
+                        </optgroup>
+
+                        <optgroup label="Animaux super cools">
+                            <option value="octopus">Un poulpe</option>
+                            <option value="tiger">Un tigre</option>
+                            <option value="garyTheSnail">Gary l'escargot</option>
+                            <option value="godzilla">Godzilla</option>
+                        </optgroup>
+                        
+                        <optgroup label="Animaux délicieux">
+                            <option value="pekingDuck">Un canard laqué</option>
+                            <option value="bambi">Bambi</option>
+                        </optgroup>
+
+                        <optgroup label="Animaux de merde">
+                            <option value="unicorn">Une licorne</option>
+                            <option value="poney">Un poney</option>
+                        </optgroup>
+                    </select>
+            </fieldset>
+
+            <fieldset name="travelDate" id="travelDate">
+                <legend>Veuillez renseigner la date à laquelle le bateau viendra vous chercher par surprise</legend>
+                <label for="onboarding">Date d'embarquement</label>
+                <input type="date" id="onboarding" name="onboarding">
+            </fieldset>
+            
+            
+            
+            <fieldset>
+                <legend>Vous êtes prêt(e) ?</legend>
+                <button type="submit">En voyage ! </button>
+                <button type="reset">J'annule tout !</button>
+            </fieldset>
+
+        </form>
+    </div>
+</body>
+</html>
